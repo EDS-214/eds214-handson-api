@@ -1,11 +1,11 @@
 ---
-title: "Using APIs to programatically retrieve data"
+title: "Using APIs to programmatically retrieve data"
 engine: knitr
 ---
 
 ## Setup
 
-- Create a new repository `api-practice` choosing to add a README.md
+- Create a new repository `api-practice`, don't forget to add a README.md
 - Clone this repository to Taylor
 - Start a new Quarto document to do the following exercises
 
@@ -17,11 +17,11 @@ USGS is managing a vast [network of gauges](https://dashboard.waterdata.usgs.gov
 
 ### Exercise 1
 
-- Create a new repository on GitHub named `api-practice` (add the README.md)
+- Create a new repository on GitHub named `api-practice` (add a README.md)
 - Clone it using RStudio server on Taylor (hint: new project)
 - Start a new Quarto document:
-    - Using `dataRetrieval` get the the discharge (ft³/s) time-series for the Ventura River (site `11118500`) during the recent Hilary tropical storm from 2023-08-19 to 2023-08-22
-    - Plot the time-series usgin `ggplot2`
+    - Using `dataRetrieval` get the discharge (ft³/s) time-series for the Ventura River (site `11118500`) during the recent Hilary tropical storm from 2023-08-19 to 2023-08-22
+    - Plot the time-series using `ggplot2`
     - What was the maximum discharge during this period of time?
 
 Webpage: <https://waterdata.usgs.gov/nwis/uv?site_no=11118500>
@@ -41,20 +41,20 @@ Tutorial for the package can be found here:
 
 The `metajam` R package relies on the dataONE API to download data **and** metadata into your R Environment. It is currently supporting KNB, ADC and EDI repositories because they rely on the metadata standard EML.
 
-Short [intro](https://brunj7.github.io/eds214-slides/metajam_intro.html) to the package
+Short [intro](https://EDS-214.github.io/eds214-slides/metajam_intro.html) to the package
 
 
 ### Exercise 2
 
-Let's determine what percentage of Alaskan household are speaking only English!
+Let's determine what percentage of Alaskan households are speaking only English!
 
-The data: https://doi.org/10.5063/F1N58JPP
+The data: <https://doi.org/10.5063/F1N58JPP>
 
 1. Read the metadata on the website
 4. Start a new R script and write a code to:
     - download the data `household_language.csv` using `metajam`
     - Read the data into R using `metajam`
-    - compute the percentage of Alaskan household speaking only English from 2009 to 2015
+    - compute the percentage of Alaskan households speaking only English from 2009 to 2015
 5. Create a plot to visualize this data
 
 
@@ -64,4 +64,4 @@ The data: https://doi.org/10.5063/F1N58JPP
 
 <hr>
 
-Back to main [Repo](https://github.com/brunj7/eds214-handson-api)
+Back to main [Repo](https://github.com/EDS-214/eds214-handson-api)
